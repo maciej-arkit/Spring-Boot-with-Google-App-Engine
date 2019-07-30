@@ -9,11 +9,11 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>spring-boot-and-gae-template</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>demo</name>
-	<description>Demo project for Spring Boot</description>
+	<name>spring-boot-and-gae-template</name>
+	<description>This is a template project to start application development with Spring Boot and Google App Engine.</description>
 
 	<properties>
 		<java.version>1.8</java.version>

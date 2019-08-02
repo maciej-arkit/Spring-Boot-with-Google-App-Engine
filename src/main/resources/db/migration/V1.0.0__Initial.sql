@@ -1,5 +1,6 @@
-CREATE TABLE shops (
-  id SERIAL PRIMARY KEY,
-  name VARCHAR(255),
-  address VARCHAR(255)
-);
+CREATE TABLE IF NOT EXISTS shops (
+  id INT(4) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(128),
+  address VARCHAR(128),
+  INDEX(name)
+) engine=InnoDB;

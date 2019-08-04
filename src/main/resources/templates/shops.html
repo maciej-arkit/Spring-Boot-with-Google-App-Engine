@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" data-th-href="@{/webjars/bootstrap/4.3.1/css/bootstrap.min.css}">
-    <link rel="stylesheet" data-th-href="@{/webjars/font-awesome/4.7.0/css/font-awesome.min.css}"/>
     <title>Shops</title>
 </head>
 <body>
@@ -22,7 +21,7 @@
         <tr data-th-each="shop : ${shops}">
             <th scope="row">[[${shop.id}]]</th>
             <td>[[${shop.name}]]</td>
-            <td><i class="fa fa-map-marker" aria-hidden="true"></i> [[${shop.address}]]</td>
+            <td>[[${shop.address}]]</td>
         </tr>
         </tbody>
     </table>

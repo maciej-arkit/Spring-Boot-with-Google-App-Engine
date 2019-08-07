@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-<html layout:decorate="~{fragments/layout}">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" data-th-href="@{/webjars/bootstrap/4.3.1/css/bootstrap.min.css}">
-    <title>Shops</title>
+    <title>Footer</title>
 </head>
 <body>
-<div layout:fragment="content">
-    <div class="mt-3">
-        This is a sample Spring Boot application deployable to Google App Engine.<br/>
-        Click <a href="#" th:href="@{/shops}">here</a> to pull some shops from database.
+<footer class="footer mt-5" th:fragment="footer">
+    <div class="container">
+        <span class="text-muted">&copy; [[${#dates.year(#dates.createNow())}]] Footer Text</span>
     </div>
-</div>
+</footer>
 </body>
 </html>

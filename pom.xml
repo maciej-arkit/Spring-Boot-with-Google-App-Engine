@@ -42,7 +42,7 @@
 			<artifactId>spring-cloud-gcp-starter-sql-mysql</artifactId>
 		</dependency>
 		<!-- google-api-client, google-api-client-appengine, google-api-client-servlet
-		     dependencies are required for application to connect to Cloud SQL when deployed on Google App Engine -->
+-                    dependencies are required for application to connect to Cloud SQL when deployed on Google App Engine -->
 		<dependency>
 			<groupId>com.google.api-client</groupId>
 			<artifactId>google-api-client</artifactId>
@@ -66,13 +66,10 @@
 		</dependency>
 		<!-- END of Google App Engine dependencies -->
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
 			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.flywaydb</groupId>
-			<artifactId>flyway-core</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

@@ -21,10 +21,9 @@ public class ShopsController {
         return "Spring Boot and Google App Engine - Hello World!";
     }
 
-    @GetMapping("/shops")
-    public List<String> getShops() {
-        return this.jdbcTemplate.queryForList("SELECT * FROM shops").stream()
-                .map((m) -> m.values().toString())
-                .collect(Collectors.toList());
+    @GetMapping("/test")
+    public String getShops() {
+        String currentTimestamp = jdbcTemplate.queryForObject("SELECT CURRENT_TIMESTAMP()", String.class);
+        return "CURRENT TIMESTAMP: " + currentTimestamp;
     }
 }

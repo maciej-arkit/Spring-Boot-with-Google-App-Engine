@@ -22,7 +22,7 @@ public class ShopsController {
 
     @GetMapping("/shops")
     public List<Shop> getShops() {
-        List<Shop> shopsList = new ArrayList<>();
+        List < Shop > shopsList = new ArrayList<>();
         this.shopRepository.findAll().forEach(shopsList::add);
         return shopsList;
     }

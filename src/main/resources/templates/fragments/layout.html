@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-<html layout:decorate="~{fragments/layout}">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" data-th-href="@{/webjars/bootstrap/4.3.1/css/bootstrap.min.css}">
-    <title>Shops</title>
+    <title layout:title-pattern="$LAYOUT_TITLE - $CONTENT_TITLE">Spring Boot and Google App Engine</title>
 </head>
 <body>
-<div layout:fragment="content">
-    <div class="mt-3">
-        This is a sample Spring Boot application deployable to Google App Engine.<br/>
-        Click <a href="#" th:href="@{/shops}">here</a> to pull some shops from database.
+<div th:replace="fragments/header :: header"></div>
+<div class="container">
+    <div layout:fragment="content">
+        CONTENT
     </div>
 </div>
+<div th:replace="fragments/footer :: footer">&copy; Footer Text</div>
 </body>
 </html>
